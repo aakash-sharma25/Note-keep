@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2962ff;
+}
+
+.navbar{
+    display: flex;
+    gap: 100px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(122, 144, 234);
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+}
+
+.main{
+    margin-top: 50px;
+}
+
+.input{
+    box-shadow: 5px 3px 10px blue;
+    background-color: #1a50e2;
+}
+
+.inputdesign{
+    background-color: #1a50e2;
+    padding: 10px;
+    color: white;  
+}
+
+.inputbox{
+    width: 500px;
+    height: 100px;
+    resize: none;  
+}
+
+.add{
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.card-main{
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+    overflow-wrap: anywhere;
+    border-radius: 10px;
+}
+
+.delete{
+    width: 80px;
+    border: 1px solid blue;
+    background-color: lightskyblue;
+    margin-top: 20px;
+    font-size: small;
+    border-radius: 5px;
+    margin-bottom: 0px;
+   
+}
+
+.home{
+    padding: 15px;
+    background-color: rgb(232, 232, 175);
+    border-radius: 20px;
+}
+
+.delmain , .archmain{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.notes-name{
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.home:hover,.delete:hover , .nav:hover{
+    background-color: blue;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+
+
+
+
+/* media queries */
+
+@media screen and (max-width:991px){
+    .delmain , .archmain{
+        max-width:80%;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .card-main,.delmain , .archmain{
+        max-width:80%;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    .navbar{
+        max-width: 90%;
+        justify-content: space-evenly;
+        gap: 40px;
+        flex-direction: column;
+    }
+    .nav-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:510px){
+    .main{
+        width: 100vw;
+    }
+    .input, .inputbox{
+        width: 80%;
+    }
+}

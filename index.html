@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Note keep app- By Aakash Sharma</title>
+</head>
+
+<body>
+    <div class="flex items-center justify-center flex-col">
+            <div class="navbar">
+                <a class="home" href="index.html">Notes keep app</a>
+                <a class='nav' href="delete.html">Deleted items</a>
+                <a  class='nav' href="archive.html">Archive items</a>
+            </div>
+
+      
+
+        <div class="main w-3/5  flex items-center justify-center flex-col">
+            <div class="input flex flex-col  justify-center">
+                <input type="text" placeholder="enter title" class="inputdesign input-title">
+                <textarea class="inputbox inputdesign input-note" placeholder="enter note...."></textarea>
+                <button class="bg-blue-500 add" onclick="addelement()">Add</button>
+            </div>
+
+        </div>
+        <div class="card-main flex gap-10  mt-10">
+          
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener("load", makecard);
+    </script>
+</body>
+
+</html>
