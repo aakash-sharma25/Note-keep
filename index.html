@@ -32,6 +32,12 @@
           
         </div>
 
+        <!-- <footer class="footer">
+            <!-- <div class="footer-content">
+                <p>@copyright <span class="date"> </span> Aakash Sharma</p>
+            </div> -->
+        </footer> -->
+
 
     </div>
 
@@ -41,6 +47,9 @@
     <script src="app.js"></script>
     <script>
         window.addEventListener("load", makecard);
+        const d = new Date();
+        let year = d.getFullYear();
+        document.querySelector(".date").innerText=year+ " ";
     </script>
 </body>
 

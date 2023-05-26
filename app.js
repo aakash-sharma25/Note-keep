@@ -69,12 +69,24 @@ function del(key){
 function archive(key){
     archivearr.push(notearr[key-100]);
     localStorage.setItem('archive', JSON.stringify(archivearr));
+    let m=key;
+    const b= document.getElementById(m)
+    b.classList.add("removebtn");
+    console.log(b);
 }
 
 
 
 function makecard() {
     let card = '';
+    let footer= `
+    <footer class="footer">
+    <div class="footer-content">
+        <p>@copyright <span class="date"> </span> Aakash Sharma</p>
+    </div>
+</footer> 
+    
+    `
     for (let i = 0; i < notearr.length; i++) {
 
         // console.log(notearr[i]);
@@ -90,7 +102,8 @@ function makecard() {
                 <button class='delete' id=${i+100}  onclick="archive(${i+100}) " >Archive</button>
             </div>
         `
-        cardmain.innerHTML = card;
+        cardmain.innerHTML = card + footer;
+
     }
 }
 

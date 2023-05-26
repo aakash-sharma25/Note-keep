@@ -109,7 +109,19 @@ body{
     transition: all 0.3s ease-in;
 }
 
+.removebtn{
+    display: none;
+}
 
+.footer{
+    text-align: center;
+    padding: 20px;
+    /* position: absolute;
+    bottom: 0px; */
+    margin-top: 20px;
+    color: white;
+    width: 100%;
+}
 
 
 
@@ -132,8 +144,9 @@ body{
     }
     .navbar{
         max-width: 90%;
-        justify-content: space-evenly;
-        gap: 40px;
+        justify-content:center;
+        align-items: center;
+        gap: 30px;
         flex-direction: column;
     }
     .nav-main{
@@ -147,7 +160,10 @@ body{
     .main{
         width: 100vw;
     }
-    .input, .inputbox{
-        width: 80%;
+    .input{
+        width: 90%;
+    }
+    .inputdesign{
+        width: 100%;
     }
 }
